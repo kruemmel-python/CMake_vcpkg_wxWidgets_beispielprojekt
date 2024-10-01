@@ -1,4 +1,4 @@
-# Abhängigkeiten für c++
+# Abhängigkeiten für C++
 
 Mehrere Bibliotheken, die über den vcpkg Paketmanager installiert werden. Nachfolgend findest du eine Beschreibung jeder Bibliothek, gruppiert nach ihrem Verwendungszweck, inklusive Links zu den offiziellen Dokumentationen.
 
@@ -85,9 +85,15 @@ Mehrere Bibliotheken, die über den vcpkg Paketmanager installiert werden. Nachf
 ## Netzwerk und Protokoll Bibliotheken
 - **[Boost.Asio](https://www.boost.org/doc/libs/release/doc/html/boost_asio.html)**: Eine plattformübergreifende C++-Bibliothek für asynchrone Ein-/Ausgabe. Sie wird häufig in Netzwerkanwendungen verwendet.
   - Installation: `%VCPKG_CMD% install boost-asio`
-
+  
 - **[libssh2](https://www.libssh2.org/)**: Eine C-Bibliothek, die das SSH-Protokoll unterstützt und SSH-basierte Verbindungen, einschließlich Dateitransfer und Remote-Kommandos, ermöglicht.
   - Installation: `%VCPKG_CMD% install libssh2`
+
+- **[cpprestsdk (C++ REST SDK)](https://github.com/microsoft/cpprestsdk)**: Ein Framework von Microsoft zur Erstellung von modernen C++-REST-Anwendungen mit HTTP- und WebSocket-Support.
+  - Installation: `%VCPKG_CMD% install cpprestsdk`
+  
+- **[pistache](http://pistache.io/)**: Ein leichtgewichtiges C++-Framework für das Entwickeln von HTTP-Servern.
+  - Installation: `%VCPKG_CMD% install pistache`
 
 ## JSON Processing Libraries
 - **[nlohmann-json](https://github.com/nlohmann/json)**: Eine JSON-Bibliothek für C++, die es ermöglicht, JSON-Daten einfach zu parsen, zu serialisieren und zu manipulieren.
@@ -107,6 +113,9 @@ Mehrere Bibliotheken, die über den vcpkg Paketmanager installiert werden. Nachf
 - **[OpenBLAS](https://www.openblas.net/)**: Eine optimierte BLAS-Bibliothek für lineare Algebra-Operationen, die vor allem in wissenschaftlichen Berechnungen verwendet wird.
   - Installation: `%VCPKG_CMD% install openblas`
 
+- **[Armadillo](http://arma.sourceforge.net/)**: Eine lineare Algebra-Bibliothek, die numerische Berechnungen vereinfacht.
+  - Installation: `%VCPKG_CMD% install armadillo`
+
 ## Logging und Formatierung
 - **[fmt](https://fmt.dev/latest/index.html)**: Eine Bibliothek für das sichere und schnelle Formatieren von Zeichenfolgen in C++.
   - Installation: `%VCPKG_CMD% install fmt`
@@ -118,9 +127,22 @@ Mehrere Bibliotheken, die über den vcpkg Paketmanager installiert werden. Nachf
 - **[TCLAP](http://tclap.sourceforge.net/)**: Eine einfache C++-Bibliothek zur Verarbeitung von Kommandozeilenargumenten.
   - Installation: `%VCPKG_CMD% install tclap`
 
+## Kryptografie und Sicherheit
+- **[OpenSSL](https://www.openssl.org/)**: Ein Toolkit für die Implementierung von SSL- und TLS-Protokollen.
+  - Installation: `%VCPKG_CMD% install openssl`
+  
+- **[libsodium](https://doc.libsodium.org/)**: Eine moderne und sichere Bibliothek für Verschlüsselung, Hashing und Authentifizierung.
+  - Installation: `%VCPKG_CMD% install libsodium`
+  
+- **[GnuTLS](https://www.gnutls.org/)**: Eine sichere Bibliothek für TLS und SSL.
+  - Installation: `%VCPKG_CMD% install gnutls`
+
 ## Audio Libraries
 - **[JUCE](https://juce.com/)**: Ein Framework für Audioanwendungen. JUCE bietet Werkzeuge zur Erstellung von Audio-Plugins, grafischen Benutzeroberflächen und Audioverarbeitung.
   - Installation: `%VCPKG_CMD% install juce`
+  
+- **[PortAudio](http://www.portaudio.com/)**: Eine plattformübergreifende API für Audio I/O.
+  - Installation: `%VCPKG_CMD% install portaudio`
 
 ## Testing Libraries
 - **[gtest](https://github.com/google/googletest)**: Google Test ist ein beliebtes C++-Framework zum Schreiben und Ausführen von Unit-Tests.
@@ -156,3 +178,11 @@ Mehrere Bibliotheken, die über den vcpkg Paketmanager installiert werden. Nachf
 
 - **[benchmark](https://github.com/google/benchmark)**: Eine Bibliothek zur Durchführung von Benchmarking-Tests, um die Leistung von C++-Code zu messen.
   - Installation: `%VCPKG_CMD% install benchmark`
+
+## JSON Processing Libraries
+- **[nlohmann-json](https://github.com/nlohmann/json)**: Eine header-only JSON-Bibliothek für C++, die es ermöglicht, JSON-Daten einfach zu parsen, zu serialisieren und zu manipulieren. Sie ist bekannt für ihre einfache API und bietet moderne C++-Funktionen wie `std::vector`, `std::map`, `std::string` für die Arbeit mit JSON-Daten.
+  - Installation: `%VCPKG_CMD% install nlohmann-json`
+
+## MySQL Connector/C++ (cppconn)
+- **[MySQL Connector/C++ (cppconn)](https://dev.mysql.com/doc/connector-cpp/en/)**: Eine C++-Bibliothek, die MySQL-Datenbankzugriff ermöglicht. Sie bietet eine API für die Arbeit mit MySQL-Datenbanken und unterstützt sowohl die alte API (ähnlich wie die C-API) als auch eine neue moderne API für eine bessere C++-Integration. Diese Bibliothek wird häufig verwendet, um Anwendungen mit einer MySQL-Datenbank zu verbinden und SQL-Abfragen direkt aus C++ auszuführen.
+  - Installation: `%VCPKG_CMD% install mysql-connector-cpp`
