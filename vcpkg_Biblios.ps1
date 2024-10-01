@@ -71,7 +71,7 @@ Write-Host "Installiere Bibliotheken über vcpkg..."
 & $vcpkgCmd install sqlite3
 
 # MySQL
-& $vcpkgCmd install mysql-connector-c
+& $vcpkgCmd install mysql-connector-cpp
 
 # PostgreSQL
 & $vcpkgCmd install libpq
