@@ -121,4 +121,61 @@ Write-Host "Installiere Bibliotheken über vcpkg..."
 & $vcpkgCmd install boost-test
 & $vcpkgCmd install benchmark
 
+# ---------------------------------------------
+# Zusätzliche Bibliotheken für professionelle C++ Programmierung
+# ---------------------------------------------
+
+# Networking and WebSocket
+& $vcpkgCmd install websocketpp
+& $vcpkgCmd install boost-beast  # Boost.Beast für HTTP und WebSocket-Kommunikation
+
+# Multi-threading / Parallel Computing
+& $vcpkgCmd install boost-fiber  # Leichtgewichtige Threads (Fibers)
+& $vcpkgCmd install openmp  # OpenMP für parallele Programmierung
+
+# Kryptografie und Sicherheit
+& $vcpkgCmd install openssl  # OpenSSL für Verschlüsselung und TLS/SSL Kommunikation
+& $vcpkgCmd install libsodium  # Eine moderne Kryptografiebibliothek
+& $vcpkgCmd install gnutls  # GnuTLS für sichere Kommunikation
+
+# Web- und API-Entwicklung
+& $vcpkgCmd install cpprestsdk  # C++ REST SDK für Web-APIs und Cloud-Dienste
+& $vcpkgCmd install pistache  # Webframework für High-Performance C++-Server
+
+# Netzwerkbibliotheken
+& $vcpkgCmd install asio  # Standalone Asio für asynchrone Netzwerkprogrammierung
+& $vcpkgCmd install libuv  # Plattformübergreifende Netzwerk- und IO-Bibliothek
+& $vcpkgCmd install cpp-httplib  # Header-only HTTP/HTTPS Bibliothek
+
+# Datenbanken und ORM
+& $vcpkgCmd install soci  # SOCI - C++ Database Access Library für PostgreSQL, MySQL, SQLite
+& $vcpkgCmd install odb  # ORM für C++ (Objekt-Relationales Mapping)
+
+# Datenstrukturen und Algorithmen
+& $vcpkgCmd install tbb  # Threading Building Blocks für parallele Algorithmen
+& $vcpkgCmd install boost-geometry  # Boost.Geometry für geometrische Berechnungen
+& $vcpkgCmd install boost-graph  # Boost.Graph für graphentheoretische Berechnungen
+
+# Bildverarbeitung
+& $vcpkgCmd install leptonica  # Bildverarbeitungsbibliothek, verwendet von Tesseract
+& $vcpkgCmd install tesseract  # OCR (Optical Character Recognition) Engine
+
+# Signalverarbeitung und Audio
+& $vcpkgCmd install fftw3  # FFTW für schnelle Fourier-Transformation
+& $vcpkgCmd install portaudio  # Cross-platform Audio Library
+& $vcpkgCmd install soxr  # Hochwertiger Audio Resampler
+
+# C++ Dateiformate und Serialisierung
+& $vcpkgCmd install cereal  # C++11 Library für Datenserialisierung
+& $vcpkgCmd install flatbuffers  # Bibliothek für effiziente plattformübergreifende Serialisierung
+
+# Testing und Codequalität
+& $vcpkgCmd install cppcheck  # Statischer Code-Analyser für C++
+& $vcpkgCmd install gcovr  # Coverage-Reporting für Unit-Tests
+
+# Mathematik und Statistik
+& $vcpkgCmd install armadillo  # High-performance linear algebra library
+& $vcpkgCmd install gsl  # GNU Scientific Library für mathematische Berechnungen
+
+
 Write-Host "Installation abgeschlossen!"
