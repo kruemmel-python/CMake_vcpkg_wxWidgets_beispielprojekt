@@ -57,6 +57,9 @@ Um wxWidgets in deinem Projekt zu verwenden, musst du es mit vcpkg installieren:
     .\vcpkg install wxwidgets --triplet x64-windows
     ```
 
+ACHTUNG: mit dem Povershell script erledigst du alles auf einmal. Zusätzlich werden die sehr oft genutzen Bibliotheken gleich mit installiert. Vorsicht es sind über 40 GB Daten die installiert werden.
+https://github.com/kruemmel-python/CMake_vcpkg_wxWidgets_beispielprojekt/blob/master/vcpkg_Biblios.ps1
+
 ### 4. CMake installieren
 
 **CMake** wird verwendet, um das Projekt zu konfigurieren und zu kompilieren. Lade CMake herunter und installiere es von der offiziellen Website: [CMake herunterladen](https://cmake.org/download/).
